@@ -1,63 +1,63 @@
 ﻿[
 	{
 		"name": "data types",
-		"templateUrl": "dataTypes/main",
+		"templateUrl": "datatypes/main",
 		"topics": [
 			{
 				"name": "basic types",
-				"templateUrl": "dataTypes/basic",
+				"templateUrl": "datatypes/basic",
 				"topics": [
 					{
 						"name": "number",
-						"templateUrl": "dataTypes/number" 
+						"templateUrl": "datatypes/number" 
 					},
 					{
 						"name": "string",
-						"templateUrl": "dataTypes/string" 
+						"templateUrl": "datatypes/string" 
 					},
 					{
 						"name": "boolean",
-						"templateUrl": "dataTypes/boolean" 
+						"templateUrl": "datatypes/boolean" 
 					}
 				]	
 			},
 			{
 				"name": "null and undefined",
-				"templateUrl": "dataTypes/nullundef"
+				"templateUrl": "datatypes/nullundef"
 			},
 			{
 				"name": "special types",
-				"templateUrl": "dataTypes/special",
+				"templateUrl": "datatypes/special",
 				"topics": [
 					{
 						"name": "object",
-						"templateUrl": "dataTypes/object"
+						"templateUrl": "datatypes/object"
 					},
 					{
 						"name": "array",
-						"templateUrl": "dataTypes/array"
+						"templateUrl": "datatypes/array"
 					}
 				]
 			},
 			{
 				"name": "special object types",
-				"templateUrl": "dataTypes/specialobject",
+				"templateUrl": "datatypes/specialobject",
 				"topics": [
 					{
 						"name": "function",
-						"templateUrl": "dataTypes/function"
+						"templateUrl": "datatypes/function"
 					},
 					{
 						"name": "class Date",
-						"templateUrl": "dataTypes/date"
+						"templateUrl": "datatypes/date"
 					},
 					{
 						"name": "class RegExp",
-						"templateUrl": "dataTypes/regexp"
+						"templateUrl": "datatypes/regexp"
 					},
 					{
 						"name": "class Error",
-						"templateUrl": "dataTypes/error"
+						"templateUrl": "datatypes/error"
 					}
 				]
 			}
