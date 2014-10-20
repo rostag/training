@@ -3,6 +3,6 @@
 	'use strict';
 	
 	angular
-		.module('trainingApp', ['']);
+		.module('trainingApp', []);
 	
 })();
