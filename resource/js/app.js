@@ -4,7 +4,5 @@
 	
 	angular
 		.module('trainingApp', ['']);
-		
-	routeCfg.$inject = ['$routeProvider'];
 	
 })();
