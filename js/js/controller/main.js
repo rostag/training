@@ -17,6 +17,14 @@
 			.error(function(error){
 				console.log(error)
 			});
+			
+		$http.get('base/function.json')
+			.success(function(response){
+				vm.functions = response;
+			})
+			.error(function(error){
+				console.log(error)
+			});
 	}
 
 })();
