@@ -1,38 +1,38 @@
 ﻿[
 	{
 		"name": "Definition and call",
-		"templateUrl": "dataTypes/main"
+		"templateUrl": "func/define"
 	},
 	{
 		"name": "Arguments",
-		"templateUrl": "var/main"
+		"templateUrl": "func/args"
 	},
 	{
 		"name": "Callback",
-		"templateUrl": "array/main"
+		"templateUrl": "func/callback"
 	},
 	{
 		"name": "Scope",
-		"templateUrl": "object/main"
+		"templateUrl": "func/scope"
 	},
 	{
 		"name": "Closure",
-		"templateUrl": "dombom/main"
+		"templateUrl": "func/closure"
 	},
 	{
 		"name": "Self-Defining Function",
-		"templateUrl": "dombom/main"
+		"templateUrl": "func/self-define"
 	},
 	{
 		"name": "Immediate Function",
-		"templateUrl": "dombom/main"
+		"templateUrl": "func/immed"
 	},
 	{
 		"name": "Returning Function",
-		"templateUrl": "dombom/main"
+		"templateUrl": "func/return"
 	},
 	{
 		"name": "Memoization, currying - overview",
-		"templateUrl": "dombom/main"
+		"templateUrl": "func/mem-curr"
 	}
 ]
