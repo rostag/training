@@ -24,6 +24,14 @@
 			})
 			.error(function(error){
 				console.log(error)
+			});	
+			
+		$http.get('base/patterns.json')
+			.success(function(response){
+				vm.patterns = response;
+			})
+			.error(function(error){
+				console.log(error)
 			});
 	}
 
