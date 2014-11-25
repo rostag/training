@@ -28,7 +28,7 @@
 
 		$http.get('base/web.json')
 			.success(function(response){
-				vm.functions = response;
+				vm.web = response;
 			})
 			.error(function(error){
 				console.log(error)
