@@ -1,0 +1,10 @@
+﻿[
+	{
+		"name": "CSS and Javascript",
+		"templateUrl": "web/css"
+	},
+	{
+		"name": "AJAX",
+		"templateUrl": "web/ajax"
+	}
+]
