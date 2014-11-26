@@ -25,10 +25,26 @@
 			.error(function(error){
 				console.log(error)
 			});
-
+        
 		$http.get('base/web.json')
 			.success(function(response){
 				vm.web = response;
+			})
+			.error(function(error){
+				console.log(error)
+			});
+
+		$http.get('base/jquery.json')
+			.success(function(response){
+				vm.jquery = response;
+			})
+			.error(function(error){
+				console.log(error)
+			});	
+		
+		$http.get('base/proto.json')
+			.success(function(response){
+				vm.proto = response;
 			})
 			.error(function(error){
 				console.log(error)
@@ -41,6 +57,23 @@
 			.error(function(error){
 				console.log(error)
 			});
+
+		$http.get('base/nodejs.json')
+			.success(function(response){
+				vm.nodejs = response;
+			})
+			.error(function(error){
+				console.log(error)
+			});	
+		
+		$http.get('base/responsiveness.json')
+			.success(function(response){
+				vm.responsiveness = response;
+			})
+			.error(function(error){
+				console.log(error)
+			});	
+		
 	}
 
 })();

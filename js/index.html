@@ -59,11 +59,51 @@
 					</div>
 					<div class="panel panel-default">
 						<div class="panel-heading">
+							jQuery
+						</div>
+						<div class="panel-body">
+							<ul class="nav nav-pills nav-stacked">
+								<li ng-repeat="topic in main.jquery" ng-include="'render_base.html'" ng-class="{'opened': topic.open}"></li>
+							</ul>
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							this, Constructor, Prototype
+						</div>
+						<div class="panel-body">
+							<ul class="nav nav-pills nav-stacked">
+								<li ng-repeat="topic in main.proto" ng-include="'render_base.html'" ng-class="{'opened': topic.open}"></li>
+							</ul>
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading">
 							Patterns
 						</div>
 						<div class="panel-body">
 							<ul class="nav nav-pills nav-stacked">
 								<li ng-repeat="topic in main.patterns" ng-include="'render_base.html'" ng-class="{'opened': topic.open}"></li>
+							</ul>
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							NodeJS
+						</div>
+						<div class="panel-body">
+							<ul class="nav nav-pills nav-stacked">
+								<li ng-repeat="topic in main.nodejs" ng-include="'render_base.html'" ng-class="{'opened': topic.open}"></li>
+							</ul>
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							UI responsiveness
+						</div>
+						<div class="panel-body">
+							<ul class="nav nav-pills nav-stacked">
+								<li ng-repeat="topic in main.responsiveness" ng-include="'render_base.html'" ng-class="{'opened': topic.open}"></li>
 							</ul>
 						</div>
 					</div>
