@@ -1,4 +1,8 @@
-﻿[
+﻿[   
+	{
+		"name": "HTML and Javascript",
+		"templateUrl": "web/html"
+	},
 	{
 		"name": "CSS and Javascript",
 		"templateUrl": "web/css"
