@@ -25,9 +25,9 @@
 		function login(){
 			if(local.loginForm.$valid){
 				$http({
-					method: 'post',
-					url: 'http://localhost:41424/api/login',
-					data: creds
+					method: 'POST',
+					url: 'localhost:41424/api/login',
+					data: local.creds
 				}).success(function(res){
 					console.log(res);
 				});
