@@ -25,9 +25,10 @@
 		function login(){
 			if(local.loginForm.$valid){
 				$http({
-					method: 'POST',
-					url: 'localhost:41424/api/login',
-					data: local.creds
+					method: 'post',
+					url: 'https://gltraining.herokuapp.com/api/login',
+					data: local.creds,
+					headers: {'Content-Type': 'application/x-www-form-urlencoded; charset=utf-8'}
 				}).success(function(res){
 					console.log(res);
 				});
