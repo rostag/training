@@ -3,7 +3,7 @@
 
 	angular
 		.module('controller.main', [])
-		.controller('mainCtrl', mainCtrl)
+		.controller('mainCtrl', mainCtrl);
 
 	mainCtrl.$inject = ['$scope', '$http'];
 	
@@ -15,7 +15,7 @@
 				vm.base = response;
 			})
 			.error(function(error){
-				console.log(error)
+				console.log(error);
 			});
 			
 		$http.get('base/function.json')
@@ -23,7 +23,7 @@
 				vm.functions = response;
 			})
 			.error(function(error){
-				console.log(error)
+				console.log(error);
 			});
         
 		$http.get('base/web.json')
@@ -31,7 +31,7 @@
 				vm.web = response;
 			})
 			.error(function(error){
-				console.log(error)
+				console.log(error);
 			});
 
 		$http.get('base/jquery.json')
@@ -39,7 +39,7 @@
 				vm.jquery = response;
 			})
 			.error(function(error){
-				console.log(error)
+				console.log(error);
 			});	
 		
 		$http.get('base/proto.json')
@@ -47,7 +47,7 @@
 				vm.proto = response;
 			})
 			.error(function(error){
-				console.log(error)
+				console.log(error);
 			});	
 			
 		$http.get('base/patterns.json')
@@ -55,7 +55,7 @@
 				vm.patterns = response;
 			})
 			.error(function(error){
-				console.log(error)
+				console.log(error);
 			});
 
 		$http.get('base/nodejs.json')
@@ -63,7 +63,7 @@
 				vm.nodejs = response;
 			})
 			.error(function(error){
-				console.log(error)
+				console.log(error);
 			});	
 		
 		$http.get('base/responsiveness.json')
@@ -71,7 +71,7 @@
 				vm.responsiveness = response;
 			})
 			.error(function(error){
-				console.log(error)
+				console.log(error);
 			});	
 		
 	}
