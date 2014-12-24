@@ -5,11 +5,10 @@
 		.module('controller.main', [])
 		.controller('mainCtrl', mainCtrl);
 
-	mainCtrl.$inject = ['$scope', '$http', '$templateCache'];
+	mainCtrl.$inject = ['$scope', '$http'];
 	
-	function mainCtrl($scope, $http, $templateCache){
-		var vm = this;
-		$templateCache.removeAll();
+	function mainCtrl($scope, $http){
+		var vm = this;             
 		
 		$http.get('base/base.json')
 			.success(function(response){
