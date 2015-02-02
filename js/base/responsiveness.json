@@ -1,3 +1,6 @@
-﻿[
-	{"a": "http://msdn.microsoft.com/en-us/library/ie/dn255009%28v=vs.85%29.aspx"}
+﻿[   
+	{
+		"name": "Optimization",
+		"templateUrl": "interface/responsiveness"
+	}
 ]
