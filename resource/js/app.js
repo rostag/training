@@ -36,7 +36,7 @@
 		
 		function wakeUp(){
 			$log.info('Starting application...');
-			$http.get(base+'wakeup', {timeout: deferred})
+			$http.get(base+'wakeup')
 				.success(function(res){
 					$log.info(res);
 					deferred.resolve({started: true});
