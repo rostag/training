@@ -4,8 +4,20 @@
 	
 	angular
 		.module('trainingApp', [])
-		.controller('loginCtrl', loginCtrl);
-		
+		.controller('loginCtrl', loginCtrl)
+		.config(['$httpProvider', function ($httpProvider) {
+			// Intercept POST requests, convert to standard form encoding
+			$httpProvider.defaults.headers.post["Content-Type"] = "application/x-www-form-urlencoded";
+			$httpProvider.defaults.transformRequest.unshift(function (data, headersGetter) {
+				var key, result = [];
+				for (key in data) {
+					if (data.hasOwnProperty(key)) {
+						result.push(encodeURIComponent(key) + "=" + encodeURIComponent(data[key]));
+					}
+				}
+				return result.join("&");
+			});
+		}]);		
 		
 	loginCtrl.$inject = ['$scope', '$http', '$q', '$log'];
 	
@@ -52,16 +64,12 @@
 			local.creds.password = hex_hmac_md5(local.creds.password, "glwebtraining");
 			
 			if(local.loginForm.$valid){
-				$http({
-					method: 'post',
-					url: base + 'log' + local.action,
-					data: local.creds,
-					headers: {'Content-Type': 'application/x-www-form-urlencoded; charset=utf-8'}
-				}).success(function(res){
-					$log.info(res);
-				}).error(function(data){
-					$log.error(data);
-				});
+				$http.post(base + 'log' + local.action, local.creds)
+					.success(function(res){
+						$log.info(res);
+					}).error(function(data){
+						$log.error(data);
+					});
 			} else{
 				local.submitted = true;
 			}
