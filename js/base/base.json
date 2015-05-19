@@ -78,20 +78,20 @@
 		]
 	},
 	{
-		"name": "Expressions, operators and instructions",
-		"templateUrl": "var/main",
+		"name": "expressions, operators and instructions",
+		"templateUrl": "expression/main",
 		"topics": [
 			{
-				"name": "declaring",
-				"templateUrl": "var/declare"
+				"name": "expressions",
+				"templateUrl": "expression/expressions"
 			},
 			{
-				"name": "scope",
-				"templateUrl": "var/scope"
+				"name": "operators",
+				"templateUrl": "expression/operators"
 			},
 			{
-				"name": "scope",
-				"templateUrl": "var/scope"
+				"name": "instructions",
+				"templateUrl": "expression/instructions"
 			}
 		]
 	},
