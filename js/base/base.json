@@ -78,6 +78,24 @@
 		]
 	},
 	{
+		"name": "Expressions, operators and instructions",
+		"templateUrl": "var/main",
+		"topics": [
+			{
+				"name": "declaring",
+				"templateUrl": "var/declare"
+			},
+			{
+				"name": "scope",
+				"templateUrl": "var/scope"
+			},
+			{
+				"name": "scope",
+				"templateUrl": "var/scope"
+			}
+		]
+	},
+	{
 		"name": "array",
 		"templateUrl": "array/main",
 		"topics": [
