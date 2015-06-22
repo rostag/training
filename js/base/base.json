@@ -134,5 +134,23 @@
 	{
 		"name": "DOM and BOM",
 		"templateUrl": "dombom/main"
+	},
+	{
+		"name": "RegExp",
+		"templateUrl": "regexp/main",
+		"topics": [
+			{
+				"name": "String methods",
+				"templateUrl": "regexp/string"
+			},
+			{
+				"name": "RegExp methods",
+				"templateUrl": "regexp/regexp"
+			},
+			{
+				"name": "Special characters meaning",
+				"templateUrl": "regexp/chars"
+			}
+		]
 	}
 ]
