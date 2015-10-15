@@ -12,7 +12,7 @@
 
 <p>Однією з них є можливість поєднання, тобто <strong>конкатенації рядків</strong> за допомогою оператора <code>+</code>, що зазвичай застосовується до чисел — а тут він поєднує рядки:</p>
 
-<pre>"Hello, " + "world"</pre>
+<pre>var helloWorld = 'Hello, ' + 'world';</pre>
 
 <p>Щоб взнати довжину рядка (тобто кількість її символів), використовується властивість <code>String.length</code></p>
 
@@ -31,7 +31,7 @@
 var str = n + ' items.';</pre>
 
 <p>На практиці часто щоб перетворити число в рядок, потрібно просто скласти його з порожнім рядком:
-<code>var n_as_string = n + "";</code></p>
+<code>var n_as_string = n + '';</code></p>
 
 <p>Для явного перетворення числа в рядок використовується функція <strong>String()</strong>:
 <code>var string_value = String(number);</code></p>
@@ -46,9 +46,9 @@ var str = n + ' items.';</pre>
 
 <pre>
 var ten = 10;
-var tenInDecimalSysten = ten.toString( 10 ); 		// результат: "10"
-var tenInBinarySystem = ten.toString( 2 );	 		// результат: "1010"
-var tenInHexadecimalSystem = ten.toString( 16 );	// результат: "a"
+var tenInDecimalSysten = ten.toString( 10 ); 		// результат: '10'
+var tenInBinarySystem = ten.toString( 2 );	 		// результат: '1010'
+var tenInHexadecimalSystem = ten.toString( 16 );	// результат: 'a'
 </pre>
 
 <h3>Зворотнє перетворення: з рядка у число: parseInt( value, radix )</h3>
