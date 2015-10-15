@@ -2,7 +2,7 @@
 
 <p>Рядок є послідовністю з символів Unicode, обмежених одинарними або подвійними лапками:</p>
 
-<pre>var aLine = 'Simple "' + [variable] + '" line'</pre>
+<pre>var aLine = 'Simple "' + [variable] + '" line';</pre>
 
 <p>Символ зворотнього слешу (\) використовується для того, щоб разом з наступним символом позначати символ, який неможливо позначити у рядку іншими способами. Например, сам символ лапок (<code>\'</code>) або символ переносу рядка <code>\n</code>, що є керуючою послідовністю символів (escape sequence). Також їх називають мета-символами: </p>
 
@@ -16,13 +16,25 @@
 
 <p>Щоб взнати довжину рядка (тобто кількість її символів), використовується властивість <code>String.length</code></p>
 
+<pre>var len = helloWorld.length; // результат: 12</pre>
+
 <p>Функція <code>str.charAt([index])</code> повертає символ, що має у рядкові індекс <strong>index</strong></p>
 
-<p><code>str.substring([m], [n])</code> - поверне під-рядок, починаючи з позиції <strong>m</strong> до позиції <strong>n</strong>, не включаючи n, — або до кінця рядка, якщо n не вказано.</p>
+<pre>var hChar = helloWorld.charAt(0); // результат: "H"</pre>
+
+<p>Функція <code>str.substring([m], [n])</code> - поверне під-рядок, починаючи з позиції <strong>m</strong> до позиції <strong>n</strong>, не включаючи n, — або до кінця рядка, якщо n не вказано.</p>
+
+<pre>var hello = helloWorld.substr(0, 4); // результат: "Hello"
+var world = helloWorld.substr(7); // результат: "world"</pre>
 
 <p>Функція <code>str.substr([m], [quantity])</code> - поверне під-рядок, починаючи з позиції <strong>m</strong> і у кількості quantity (або до кінця рядка, якщо quantity не вказано).</p>
 
+<pre>var comma = helloWorld.substr(5, 1); // результат: ","
+var commaAndSpace = helloWorld.substr(5, 2); // результат: ", " (з пробілом (!))</pre>
+
 <p>Функція <code>str.indexOf([symbol])</code> повідомляє нам індекс символа <code>symbol</code> у рядку <code>str</code></p>
+
+<pre>var indexOfWorld = helloWorld.indexOf( world ); // результат: 7</pre>
 
 <h3>Перетворення чисел у рядки і навпаки</h3>
 <p>Перетворення чисел в рядки проводиться автоматично, по мірі необхідності. Наприклад, якщо число використовується в операції конкатенації рядків, воно буде перетворено в рядок:</p>
