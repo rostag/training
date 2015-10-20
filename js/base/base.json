@@ -1,8 +1,4 @@
-﻿// TODO: додати про:
-// ключові (зарезервовані) слова
-// кращі практики написання коду: http://www.w3schools.com/js/js_best_practices.asp 
-
-[
+﻿[
 	{
 		"name": "Типи даних",
 		"templateUrl": "dataTypes/main",
