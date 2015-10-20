@@ -1,62 +1,66 @@
-﻿[
+﻿// TODO: додати про:
+// ключові (зарезервовані) слова
+// кращі практики написання коду: http://www.w3schools.com/js/js_best_practices.asp 
+
+[
 	{
-		"name": "data types",
+		"name": "Типи даних",
 		"templateUrl": "dataTypes/main",
 		"topics": [
 			{
-				"name": "basic types",
+				"name": "Прості типи",
 				"templateUrl": "dataTypes/basic",
 				"topics": [
 					{
-						"name": "number",
+						"name": "Number",
 						"templateUrl": "dataTypes/number" 
 					},
 					{
-						"name": "string",
+						"name": "String",
 						"templateUrl": "dataTypes/string" 
 					},
 					{
-						"name": "boolean",
+						"name": "Boolean",
 						"templateUrl": "dataTypes/boolean" 
 					}
 				]	
 			},
 			{
-				"name": "null and undefined",
+				"name": "null та undefined",
 				"templateUrl": "dataTypes/nullundef"
 			},
 			{
-				"name": "special types",
+				"name": "Cкладний тип",
 				"templateUrl": "dataTypes/special",
 				"topics": [
 					{
-						"name": "object",
+						"name": "Object",
 						"templateUrl": "dataTypes/object"
 					},
 					{
-						"name": "array",
+						"name": "Array",
 						"templateUrl": "dataTypes/array"
 					}
 				]
 			},
 			{
-				"name": "special object types",
+				"name": "Спеціальні типи об'єктів",
 				"templateUrl": "dataTypes/specialobject",
 				"topics": [
 					{
-						"name": "function",
+						"name": "Function",
 						"templateUrl": "dataTypes/function"
 					},
 					{
-						"name": "class Date",
+						"name": "Клас Date",
 						"templateUrl": "dataTypes/date"
 					},
 					{
-						"name": "class RegExp",
+						"name": "Клас RegExp",
 						"templateUrl": "dataTypes/regexp"
 					},
 					{
-						"name": "class Error",
+						"name": "Клас Error",
 						"templateUrl": "dataTypes/error"
 					}
 				]
