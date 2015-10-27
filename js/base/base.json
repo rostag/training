@@ -78,7 +78,7 @@
 		]
 	},
 	{
-		"name": "expressions, operators and instructions",
+		"name": "Вирази, оператори та інструкції",
 		"templateUrl": "expression/main",
 		"topics": [
 			{
