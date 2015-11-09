@@ -64,15 +64,15 @@
 		]
 	},
 	{
-		"name": "variable",
+		"name": "Змінна - variable",
 		"templateUrl": "var/main",
 		"topics": [
 			{
-				"name": "declaring",
+				"name": "Оголошення - declaring",
 				"templateUrl": "var/declare"
 			},
 			{
-				"name": "scope",
+				"name": "Область видимості - scope",
 				"templateUrl": "var/scope"
 			}
 		]
@@ -82,15 +82,15 @@
 		"templateUrl": "expression/main",
 		"topics": [
 			{
-				"name": "expressions",
+				"name": "Вирази - expressions",
 				"templateUrl": "expression/expressions"
 			},
 			{
-				"name": "operators",
+				"name": "Оператори - operators",
 				"templateUrl": "expression/operators"
 			},
 			{
-				"name": "instructions",
+				"name": "Інструкції - instructions",
 				"templateUrl": "expression/instructions"
 			}
 		]
@@ -140,15 +140,15 @@
 		"templateUrl": "regexp/main",
 		"topics": [
 			{
-				"name": "String methods",
+				"name": "Методи String",
 				"templateUrl": "regexp/string"
 			},
 			{
-				"name": "RegExp methods",
+				"name": "Методи RegExp",
 				"templateUrl": "regexp/regexp"
 			},
 			{
-				"name": "Special characters meaning",
+				"name": "Значення спеціальних символів - Special characters meaning",
 				"templateUrl": "regexp/chars"
 			}
 		]
