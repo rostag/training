@@ -1,19 +1,23 @@
-﻿<p>об'єкти створюються шляхом виклику спеціальних функцій-конструкторів</p>
+﻿<p>Об'єкти створюються шляхом виклику спеціальних функцій-конструкторів:</p>
 <p>
-	<code>var o = new Object();</code><br />
-	<code>var now = new Date();</code><br />
-	<code>var pattern = new RegExp("\\sjava\\s", "i");</code><br />
+	<pre>
+	var o = new Object();
+	var now = new Date();
+	var pattern = new RegExp("\\sjava\\s", "i");
+	</pre>
 </p>
 <p>Створивши власний об'єкт, можна його як завгодно використовувати і встановлювати його властивості</p>
 <p>
-	<code>var point = new Object();</code><br />
-	<code>point.x = 2.3;</code><br />
-	<code>point.y = -1.2;</code><br />
+	<pre>
+	var point = new Object();
+	point.x = 2.3;
+	point.y = -1.2;
+	</pre>
 </p>
 <p>JavaScript визначається синтаксис об'єктних літералів, що дозволяє створювати об'єкти і вказувати їх властивості. Об'єктний літерал (також відомий як Ініціалізатор об'єкта) є списком розділених комами пар «властивість / значення», укладений у фігурні дужки. Усередині пар роль роздільника грає двокрапка. Таким чином, об'єкт point з попереднього прикладу також може бути створений і ініційований наступним рядком:</p>
-<p><code>var point = { x:2.3, y:-1.2 };</code></p>
+<p><pre>var point = { x:2.3, y:-1.2 };</pre></p>
 <p>Об'єктні літерали можуть бути вкладеними.</p>
-<p><code>var rectangle = { upperLeft: { x: 2, y: 2 } };</code></p>
+<p><pre>var rectangle = { upperLeft: { x: 2, y: 2 } };</pre></p>
 <p>Значеннями властивостей в об'єктних літералах не обов'язково повинні
 бути константи - це можуть бути довільні JavaScript-вирази.</p>
-<p><code>var square = { "upperLeft": { x:point.x, y:point.y } };</code></p>
+<p><pre>var square = { "upperLeft": { x:point.x, y:point.y } };</pre></p>
