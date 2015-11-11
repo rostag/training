@@ -106,6 +106,10 @@
 			{
 				"name": "Функції з ES5",
 				"templateUrl": "array/functiones5"
+			},
+			{
+				"name": "Які методи змінюють масив",
+				"templateUrl": "array/mutators-accessors"
 			}
 		]
 	},
