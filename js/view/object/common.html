@@ -29,9 +29,9 @@
 <p>Метод propertyIsEnumerable() повертає true, якщо об'єкт має вказану властивість, і вона може бути використана у переліку циклом for/in. В іншому випадку метод повертає false.</p>
 <p>
 	<pre>var o = { x:1 };
-	o.propertyIsEnumerable("x"); // true: свойство существует и является перечислимым
-	o.propertyIsEnumerable("y"); // false: свойство не существует
-	o.propertyIsEnumerable("valueOf"); // false: свойство неперечислимое</pre>
+	o.propertyIsEnumerable("x"); // true: властивість існує і є перелічуваною
+	o.propertyIsEnumerable("y"); // false: властивість не існує
+	o.propertyIsEnumerable("valueOf"); // false: властивість не є перелічуваною</pre>
 </p>
 <p>Зверніть увагу: всі властивості об'єкта, визначені користувачем, можуть бути використані у переліку циклом for...in</p>
 
