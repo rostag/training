@@ -1,5 +1,9 @@
 ﻿[
 	{
+		"name": "Вступ",
+		"templateUrl": "dataTypes/intro"
+	},
+	{
 		"name": "Типи даних",
 		"templateUrl": "dataTypes/main",
 		"topics": [
@@ -9,17 +13,17 @@
 				"topics": [
 					{
 						"name": "Number",
-						"templateUrl": "dataTypes/number" 
+						"templateUrl": "dataTypes/number"
 					},
 					{
 						"name": "String",
-						"templateUrl": "dataTypes/string" 
+						"templateUrl": "dataTypes/string"
 					},
 					{
 						"name": "Boolean",
-						"templateUrl": "dataTypes/boolean" 
+						"templateUrl": "dataTypes/boolean"
 					}
-				]	
+				]
 			},
 			{
 				"name": "null та undefined",
