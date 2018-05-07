@@ -1,11 +1,18 @@
-#wrapper{
+#wrapper {
 	width: 100%;
 	overflow: hidden;
 }
-#main{
+
+#main {
 	width: 100%;
 	overflow: hidden;
 }
-#page{
+
+#page {
 	margin: 0 0 20px;
+}
+
+.arrow-icon {
+	display: inline-block;
+	padding-right: 4px;
 }

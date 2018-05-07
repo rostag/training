@@ -15,7 +15,11 @@
 	</head>
 	<body>
 		<script type="text/ng-template" id="render_base.html">
-			<div ng-style="{'padding-left': (topic.topics.length ? '0px' : '12px'), 'cursor':'pointer'}"><span ng-if="topic.topics" ng-show="!topic.open" ng-click="topic.open = true">&#9656;</span><span ng-if="topic.topics" ng-show="topic.open" ng-click="topic.open = false">&#9662;</span><a href="#{{topic.templateUrl}}">{{topic.name}}</a></div>
+			<div ng-style="{'padding-left': (topic.topics.length ? '0px' : '12px'), 'cursor':'pointer'}">
+				<span class="arrow-icon" ng-if="topic.topics" ng-show="!topic.open" ng-click="topic.open = true">&#9656;</span>
+				<span class="arrow-icon" ng-if="topic.topics" ng-show="topic.open" ng-click="topic.open = false">&#9662;</span>
+				<a href="#{{topic.templateUrl}}">{{topic.name}}</a>
+			</div>
 			<ul class="nav nav-pills nav-stacked nav-child" ng-if="topic.topics" ng-init="topic.open = false" ng-show="topic.open" style="margin: 5px 0 0 10px;">
 				<li ng-repeat="topic in topic.topics" ng-include="'render_base.html'" ng-class="{'opened': topic.open}">
 					<a href="#{{topic.templateUrl}}">{{topic.name}}</a>
