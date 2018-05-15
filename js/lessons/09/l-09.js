@@ -7,10 +7,10 @@
 	 	* Методи об'єктів
  		* JSON
  		* DOM та BOM
-	Core.Load('../../lessons/09/l-9.js')
+	node ('../../lessons/09/l-9.js')
 */
 
-Core.Print('\nLesson 10 - Start');
+console.log('\nLesson 10 - Start');
 
 //
 // Робота з об'єктами
@@ -42,7 +42,7 @@ Core.Print('\nLesson 10 - Start');
 
 // Визначимо для подальшого використання об'єкт console, єдина мета якого - бути сховищем
 // корисних методів, таких, як log, заголовок h1 та сепаратор s, а ті методи, у свою чергу,
-// використовують єдиний метод Core.Print, але по різному:
+// використовують єдиний метод console.log, але по різному:
 
 function setConsole(root) {
 	if (root.console) {
@@ -51,14 +51,14 @@ function setConsole(root) {
 	}
 	root.console = {
 		log: function(arg) {
-			Core.Print(arg);
+			console.log(arg);
 		},
 		h1: function(arg) {
-			Core.Print('\n### ' + arg + ' ###\n');
+			console.log('\n### ' + arg + ' ###\n');
 		},
 		s: function(s, n) {
 			// FIXME: Зробити так, щоб дана функція друкувала символ s у кількості n:
-			Core.Print('--------------------------------------');
+			console.log('--------------------------------------');
 		}
 	};
 }
@@ -748,16 +748,16 @@ f = function( argument) { } // функція-вираз
 // інструкція функції
 // var a;
 // function separator () {
-// 	Core.Print('------------------');
+// 	console.log('------------------');
 // }
 
 // функція-вираз
 var separator = function() {
- 	Core.Print('------------------');
+ 	console.log('------------------');
 }
 
 var arr = [ function(){
-	Core.Print('0000000000000000000000');
+	console.log('0000000000000000000000');
 }];
 
 separator();
@@ -818,7 +818,7 @@ console.h1('Lesson 9 - End');
 // Домашня робота:
 //
 
-Core.Print('\nLesson 9 - Homework');
+console.log('\nLesson 9 - Homework');
 
 // Попрацюємо над студентом:
 
@@ -833,7 +833,7 @@ var student = {
 	}
 };
 
-Core.Print('\nTask 9.1');
+console.log('\nTask 9.1');
 
 // (1 бал)
 // Вище визначено об'єкт 'student'. Знайди серед його властивостей ту,
@@ -842,7 +842,7 @@ Core.Print('\nTask 9.1');
 // TODO: пиши свій код тут:
 
 
-Core.Print('\nTask 9.2');
+console.log('\nTask 9.2');
 // (1 бал) 
 // TODO: пиши код тут:
 
@@ -925,7 +925,7 @@ Core.Print('\nTask 9.2');
 // 3. "str1".concat("str2")
 // 3. String.concat("str1", "str2")
 
-Core.Print('\nTask 9.3');
+console.log('\nTask 9.3');
 
 // (2 бали)
 // Знайди у файлові даного уроку перший коментар, що починається з "// FIXME" і виконай його,
@@ -933,7 +933,7 @@ Core.Print('\nTask 9.3');
 
 // TODO: пиши код тут:
 
-Core.Print('\nTask 9.4');
+console.log('\nTask 9.4');
 
 // (3 бали)
 // Є два списки різної довжини. У першому містяться ключі, а в другому —
@@ -944,7 +944,7 @@ Core.Print('\nTask 9.4');
 // TODO: пиши тут:
 
 
-Core.Print('\nTask 9.5');
+console.log('\nTask 9.5');
 // (3 бали)
 // TODO: пишіть свій код тут:
 // Напишіть функцію buyStuffInShop, яка має параметр: функцію зворотнього виклику callHomeWhenInShop, 
@@ -952,4 +952,4 @@ Core.Print('\nTask 9.5');
 // TODO: пишіть свій код тут:
 
 
-Core.Print('\nLesson 9 - Homework End');
+console.log('\nLesson 9 - Homework End');

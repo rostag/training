@@ -5,14 +5,14 @@
  * - Просунуті методи масивів
  * 
  * Щоб завантажити урок у Шелл:
- * Core.Load('../../lessons/08/l-08.js');
+ * node ('../../lessons/08/l-08.js');
  */
 
 /* globals Core */
 
 'use strict';
 
-Core.Print('\nLesson 08 - Start');
+console.log('\nLesson 08 - Start');
 
 // 
 // Масиви у Javascript
@@ -34,7 +34,7 @@ Core.Print('\nLesson 08 - Start');
 
 a = new Array('banana', 'cherry', 'apple').sort().join(', ');
 
-Core.Print( a );
+console.log( a );
 
 // Для сортування в якому-небудь іншому порядку, відмінному від алфавітного, 
 // можна передати методу sort() як аргумент функцію порівняння. 
@@ -70,10 +70,10 @@ function bLessThanA (a, b) {
 
 // Comparator Function
 a.sort( aLessThanB );
-Core.Print( 'sorted by aLessThanB = ' + a );
+console.log( 'sorted by aLessThanB = ' + a );
 
 a.sort( bLessThanA );
-Core.Print( 'sorted by bLessThanA = ' + a );
+console.log( 'sorted by bLessThanA = ' + a );
 
 // 
 // Array.concat()
@@ -86,7 +86,7 @@ Core.Print( 'sorted by bLessThanA = ' + a );
 // в результуючий масив додаються його елементи.
 
 function trace( arr ) {
-	Core.Print('Array = ', arr );
+	console.log('Array = ', arr );
 }
 
 a = a.concat(795, 796);
@@ -157,7 +157,7 @@ trace( ddddd );
 // заданої першим аргументом.
 
 function p ( s ) {
-	Core.Print(s);
+	console.log(s);
 }
 
 p('----------------SPLICE-----------------');
@@ -237,22 +237,22 @@ var primes = [1,3,5,7,11];
 
 a = primes.shift(); // pop виштовхує з кінця, а цей - з початку
 
-Core.Print(a); // 1
+console.log(a); // 1
 
-Core.Print(primes); // [3,5,7,11]
+console.log(primes); // [3,5,7,11]
 
 a = primes.shift();
 
-Core.Print(a); // 3
+console.log(a); // 3
 
-Core.Print(primes); // [5,7,11]
+console.log(primes); // [5,7,11]
 
 // 
 var b = primes.unshift(a);
 
-Core.Print(b); // 4
+console.log(b); // 4
 
-Core.Print(primes); // [3,5,7,11]
+console.log(primes); // [3,5,7,11]
 
 // 
 // Метод toString()
@@ -261,8 +261,8 @@ Core.Print(primes); // [3,5,7,11]
 // Перетворює кожен з елементів масиву на рядок, викликаючи в разі необхідності методи toString() 
 // для елементів масиву і виводить список цих рядків через кому.
 
-Core.Print( [1,2,3].toString() );
-Core.Print( [1,2,3] );
+console.log( [1,2,3].toString() );
+console.log( [1,2,3] );
 
 
 // 
@@ -299,7 +299,7 @@ var sum = 0;
 
 function doNiceThings(value, index, array) {
 	sum += value;
-	Core.Print('sum = ' + sum);
+	console.log('sum = ' + sum);
 }
 
 data.forEach(doNiceThings);
@@ -308,7 +308,7 @@ sum = 0;
 var i;
 for (i = 0; i < data.length; i++) {
 	sum += data[i];
-	Core.Print('sum = ' + sum);
+	console.log('sum = ' + sum);
 }
 
 // На жаль, якщо нам знадобиться передчасно вийти з циклу, то інструкція break тут не спрацює 
@@ -529,30 +529,30 @@ p(checkIfElementInArray(a, 4));
 p(checkIfElementInArray(a, 0));
 
 
-Core.Print('\nLesson 08 - End');
+console.log('\nLesson 08 - End');
 
 //
 // Домашня робота (перші три завдання - повторення з попередньої роботи):
 //
 
-Core.Print('\nLesson 08 - Homework');
+console.log('\nLesson 08 - Homework');
 
 // Вправи з масивами
 // Важливо: все, що потрібно знати для виконання завдань, є у даному файлі
 
-Core.Print('\nTask 8.1'); 
+console.log('\nTask 8.1'); 
 // (1 бал) 
 // Прочитай файл уроку. Створи новий масив primeNumbers, що складається з перших десяти простих чисел. 
 // Використай метод push, щоб додати до масиву ще одне просте число.
 // TODO: пиши код тут:
 
-Core.Print('\nTask 8.2'); 
+console.log('\nTask 8.2'); 
 // (2 бали) 
 // Напиши функцію sortNumbers і використай її у методі sort масиву для того, 
 // щоб відсортувати його елементи у зворотньому порядку.
 // TODO: пиши код тут:
 
-Core.Print('\nTask 8.3'); 
+console.log('\nTask 8.3'); 
 // (3 бали)
 // За допомогою методу splice виріж з масиву елементи з другого по третій і при цьому заміни їх на рядок 'foo'.
 // TODO: пиши код тут:
@@ -573,14 +573,14 @@ var student = {
 	}
 };
 
-Core.Print('\nTask 8.4');
+console.log('\nTask 8.4');
 // (1 бал) 
 // Використай метод Array.forEach для того, 
 // щоб додати до кожного елементу масиву [21, 63, 84] число '42'
 // TODO: пиши свій код тут:
 
 
-Core.Print('\nTask 8.5');
+console.log('\nTask 8.5');
 // (2 бали) 
 // Дано масив crazyMix, до якого увійшли елементи різних типів:
 var crazyMix = [1, '1', true, 2, '02', 3, '0', '10', 11, [], {}, function() {}];
@@ -600,12 +600,12 @@ var cleanedUp = arrayCleanUp(crazyMix).every(function(element) {
 
 // Цей код тестує завдання:
 if (cleanedUp) {
-	Core.Print('Task 8.5 is DONE! ');
+	console.log('Task 8.5 is DONE! ');
 } else {
-	Core.Print('Please make Task 8.2');
+	console.log('Please make Task 8.2');
 }
 
-Core.Print('\nTask 8.6');
+console.log('\nTask 8.6');
 // (3 бали)
 // Даний код. Допиши у ньому функцію findMaxInMatrix, 
 // яка знаходить максимальний елемент (найбільше число) у матриці.
@@ -625,11 +625,11 @@ var res = findMaxInMatrix(matrix);
 // Цей код тестує завдання:
 
 if (res === 29) {
-	Core.Print('Task 8.6 is Done: ' + res);
+	console.log('Task 8.6 is Done: ' + res);
 } else {
-	Core.Print('Please make Task 8.6');
+	console.log('Please make Task 8.6');
 }
 
-Core.Print('\nLesson 08 - Homework End');
+console.log('\nLesson 08 - Homework End');
 
 // Дякую!

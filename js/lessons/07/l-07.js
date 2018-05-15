@@ -6,12 +6,12 @@
  * - Базові методи масивів (початок)
  * 
  * Щоб завантажити урок у Шелл:
- * Core.Load('../../lessons/lesson-08/l-08.js');
+ * node ('../../lessons/lesson-08/l-08.js');
  */
 
 'use strict';
 
-Core.Print('\nLesson 07 - Start');
+console.log('\nLesson 07 - Start');
 
 // 
 // Інструкції - Statements
@@ -53,7 +53,7 @@ var temp = 100;
 {
 	temp = Math.PI;
 	var cx = Math.cos(temp);
-	Core.Print('cos(' + temp + ') = ' + cx);
+	console.log('cos(' + temp + ') = ' + cx);
 }
 
 // Зверніть увагу, що хоча блок інструкцій діє як одна інструкція, 
@@ -143,7 +143,7 @@ switch (n) {
 
 var c = 0;
 while (c < -1) {
-	Core.Print('Hello');
+	console.log('Hello');
 	++c;
 }
 
@@ -170,7 +170,7 @@ while (c < -1) {
 c = 0;
 
 do {
-	Core.Print('Hello', c);
+	console.log('Hello', c);
 	++c;
 }
 while (c < -1);
@@ -195,7 +195,7 @@ while (c < -1);
 var i;
 
 for (i = 0; i <= 10; i++) {
-	Core.Print(i * i);
+	console.log(i * i);
 }
 
 //
@@ -227,7 +227,7 @@ var student = {
 
 var propertyName; // String
 for (propertyName in student) {
-	Core.Print(propertyName, ' = ', student[propertyName]);
+	console.log(propertyName, ' = ', student[propertyName]);
 }
 
 // Тут змінна повинна бути або ім'ям змінної, або інструкцією var з оголошенням змінної, або елементом масиву, 
@@ -254,10 +254,10 @@ var i;
 
 for (i = 0; i <= 10; i++) {
 	if (i > Math.round(Math.random() * 1000)) {
-		Core.Print('DOSYT!')
+		console.log('DOSYT!')
 		break;
 	}
-	Core.Print(i);
+	console.log(i);
 }
 
 // 
@@ -271,10 +271,10 @@ for (i = 0; i <= 10; i++) {
 
 for (i = 0; i <= 50; i++) {
 	if (i % 10 === 0) {
-		Core.Print('' + i + ' % 10  === 0!');
+		console.log('' + i + ' % 10  === 0!');
 		continue;
 	}
-	Core.Print('ITERATION END for ' + i);
+	console.log('ITERATION END for ' + i);
 }
 
 // 
@@ -349,12 +349,12 @@ function square(x) {
 		return 'Not a number: ' + x;
 	}
 
-	Core.Print(x, ' = ', x * x);
+	console.log(x, ' = ', x * x);
 	return x * x;
 }
 
-Core.Print(square(1));
-Core.Print(square('XYZ'));
+console.log(square(1));
+console.log(square('XYZ'));
 
 
 // 
@@ -519,7 +519,7 @@ a = new Array(1.2, 'JavaScript', true);
 
 a = new Array(10);
 
-Core.Print( 'a length = ' + a.length );
+console.log( 'a length = ' + a.length );
 
 // Найлегше створити масив можна за допомогою літерала, 
 // який є простим списком розділених 
@@ -551,13 +551,13 @@ a[a[i]] = a[0];
 
 // a['-1.23'] = true;
 
-// Core.Print(a);
+// console.log(a);
 
 // a = {
 // 	'-1.23': true
 // }
 
-Core.Print(a);
+console.log(a);
 
 // 
 // Довжина масиву
@@ -567,7 +567,7 @@ Core.Print(a);
 // що встановлює кількість елементів у масиві. 
 // Максимально можливе значення властивості length дорівнює 232–1.
 
-Core.Print( 'a length = ' + a.length );
+console.log( 'a length = ' + a.length );
 
 var b = [];
 b = new Array(1,2,3);
@@ -576,16 +576,16 @@ b[49] = 0;
 
 // Чому буде дорівнювати довжина масиву в прикладі?
 
-Core.Print( 'b length = ' + b.length ); // 50
+console.log( 'b length = ' + b.length ); // 50
 
 var c = [];
 c[1000000] = 'hello';
-Core.Print( 'c length = ' + c.length ); // 1000001
+console.log( 'c length = ' + c.length ); // 1000001
 
 // Урізаємо масив:
 a.length = 3;
-Core.Print( 'a = ' + a );
-Core.Print( 'A length = ' + a.length );
+console.log( 'a = ' + a );
+console.log( 'A length = ' + a.length );
 
 // Властивість length масиву доступна як для читання, так і для запису. 
 // Якщо встановити властивість length в значення, менше поточного, масив коротшає до нової довжини; 
@@ -609,7 +609,7 @@ Core.Print( 'A length = ' + a.length );
 a[0] = 'FIRST';
 a[1] = 'SECOND';
 var joined = a.join();
-Core.Print('joined = ' + joined + ' ' + (typeof joined) );
+console.log('joined = ' + joined + ' ' + (typeof joined) );
 
 // 
 // String.split([separator])
@@ -618,12 +618,12 @@ Core.Print('joined = ' + joined + ' ' + (typeof joined) );
 // Створює масив шляхом розбиття рядка на фрагменти.
 
 var newArray = joined.split('S');
-Core.Print('split = ' + newArray );
+console.log('split = ' + newArray );
 
 var strArr = 'Hello'.split('');
-Core.Print(strArr);
+console.log(strArr);
 
-Core.Print(strArr.join('-'));
+console.log(strArr.join('-'));
 
 // 
 // Array.reverse()
@@ -631,9 +631,9 @@ Core.Print(strArr.join('-'));
 
 // Змінює порядок елементів в масиві на протилежний і повертає масив з переставленими елементами.
 
-Core.Print(strArr.reverse());
+console.log(strArr.reverse());
 
-Core.Print('World'.split('').reverse().join('')); // dlroW
+console.log('World'.split('').reverse().join('')); // dlroW
 
 // 
 // Array.sort(callbackFunction)
@@ -645,7 +645,7 @@ Core.Print('World'.split('').reverse().join('')); // dlroW
 
 a = new Array('banana', 'cherry', 'apple').sort().join(', ');
 
-Core.Print( a );
+console.log( a );
 
 // Для сортування в якому-небудь іншому порядку, відмінному від алфавітного, 
 // можна передати методу sort() як аргумент функцію порівняння. 
@@ -677,9 +677,9 @@ console.log( 'sorted by aLessThanB = ' + a );
 a.sort( bLessThanA );
 console.log( 'sorted by bLessThanA = ' + a );
 
-Core.Print('\nLesson 07 - End');
+console.log('\nLesson 07 - End');
 
-Core.Print('\nLesson 07 - Homework');
+console.log('\nLesson 07 - Homework');
 
 //
 // Домашня робота:
@@ -698,17 +698,17 @@ var student = {
 	}
 };
 
-Core.Print('\nTask 7.1'); 
+console.log('\nTask 7.1'); 
 // (1 бал)
 // Прочитай файл уроку. Використай інструкцію for для того, щоб вивести на екран числа від одного до десяти.
 // TODO: пиши свій код тут:
 
-Core.Print('\nTask 7.2'); 
+console.log('\nTask 7.2'); 
 // (2 бали)
 // Додай до визначеного вище об'єкта student властивість isManager і надай ій початкового значення false.
 // TODO: пишиі свій код тут:
 
-Core.Print('\nTask 7.3'); 
+console.log('\nTask 7.3'); 
 // (3 бали)
 // Напиши функцію canDoNoHomeworksAtAll, яка приймає єдиний аргумент - student і повертає значення 
 // його властивості isManager для даного студента.
@@ -720,22 +720,22 @@ Core.Print('\nTask 7.3');
 
 // Важливо: все, що потрібно знати для виконання завдань, є у даному файлі
 
-Core.Print('\nTask 7.4'); 
+console.log('\nTask 7.4'); 
 // (1 бал) 
 // Прочитай файл уроку. Створи новий масив primeNumbers, що складається з перших десяти простих чисел. 
 // Використай метод push, щоб додати до масиву ще одне просте число.
 // TODO: пиши код тут:
 
-Core.Print('\nTask 7.5'); 
+console.log('\nTask 7.5'); 
 // (2 бали) 
 // Напиши функцію sortNumbers і використай її у методі sort масиву для того, 
 // щоб відсортувати його елементи у зворотньому порядку.
 // TODO: пиши код тут:
 
-Core.Print('\nTask 7.6'); 
+console.log('\nTask 7.6'); 
 // (3 бали)
 // За допомогою методу splice виріж з масиву елементи з другого по третій і при цьому заміни їх на рядок 'foo'.
 // TODO: пиши код тут:
 
-Core.Print('\nLesson 07 - Homework End');
+console.log('\nLesson 07 - Homework End');
 

@@ -8,10 +8,10 @@
  *
  *
  * Щоб завантажити урок у Шелл:
- * Core.Load('../../lessons/lesson-14/l-14.js');
+ * node ('../../lessons/lesson-14/l-14.js');
  */
 
-Core.Print('\nLesson 12 - Start');
+console.log('\nLesson 12 - Start');
 
 // JS Closures - Classical Definition
 // https://developer.mozilla.org/en/docs/Web/JavaScript/Closures
@@ -94,7 +94,7 @@ console.log ( s1.getInfo() );
 
 MYAPP.console = {
   log: function(arg) {
-    Core.Print('LOG:', arg);
+    console.log('LOG:', arg);
   }
 };
 

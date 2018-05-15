@@ -3,7 +3,7 @@
 	JS Language and its Types§.
 
 	To load this lesson into Shell:
- 	Core.Load('../../lessons/01/l-01.js');
+ 	node ('../../lessons/01/l-01.js');
 
 	* * *
 
@@ -19,10 +19,10 @@
 		1. Open test.js file in Notepad++
 		2. Type test scenario
 		3. To print any result into console use command:
-				Core.Print("Hello World");
+				console.log("Hello World");
 		4. To run test.js file use command from console:
-				Core.Load('test.js');
-		5. Core.Quit();
+				node ('test.js');
+		5. exit;
 */
 
 // JavaScript is a language consisting of two kinds ot text:

@@ -5,7 +5,7 @@
  *  - Області видимости
  * 
  * Щоб завантажити урок у Шелл:
- * Core.Load('../../lessons/03/l-03.js');
+ * node ('../../lessons/03/l-03.js');
  */
 
 // Спочатку було слово, і воно було:
@@ -54,8 +54,8 @@ var lesson = {
 // При такій роботі з об'єктом використовується спеціальний синтаксис 
 // для доступу до властивостей: рядок, що містить ім'я потрібної властивості, записується всередині квадратних дужок:
 
-Core.Print( lesson.name );
-Core.Print( lesson['name'] );
+console.log( lesson.name );
+console.log( lesson['name'] );
 
 // 
 // Тип масив — Array
@@ -68,7 +68,7 @@ var plainNumbersArray = [1, 2, 3, 5, 7, 11, 13, 17, 19];
 var firstElement = plainNumbersArray[0]; // 1
 var thirdElement = plainNumbersArray[2];
 
-Core.Print('Third element = ' + thirdElement );
+console.log('Third element = ' + thirdElement );
 
 // Нумерація елементів масиву починається з нуля, тому у прикладі вище написано [2], 
 // а не [3] для отримання третього елементу.
@@ -82,10 +82,10 @@ people['Marichka'] = new Object();
 people['Taras'] = new Object();
 
 // Can use spaces here:
-// Core.Print( people['Anya 1'] ); 
+// console.log( people['Anya 1'] ); 
 
 // And can't use spaces there:
-// Core.Print( people.Anya 1); // 
+// console.log( people.Anya 1); // 
 
 // Крім функцій і масивів в базовій мові JavaScript визначено ще 
 // кілька спеціальних видів об'єктів.
@@ -140,24 +140,24 @@ var checkHomework2 = function( students, moreParams ) {
 // 
 
 // 1. Reference to Function, no braces:
-Core.Print( checkHomework );
+console.log( checkHomework );
 
 // 2. Function Execution, braces used: ()
-Core.Print( checkHomework() );
+console.log( checkHomework() );
 
 // 1. Reference to Function, no braces:
 var myNumber = Math.random;
 
-Core.Print( myNumber ); // NaN 
+console.log( myNumber ); // NaN 
 
 // 2. Function Execution, braces used: ()
 var myNumber = Math.random();
 
 // () - Function Call
 
-Core.Print( myNumber );
+console.log( myNumber );
 
-Core.Print( checkHomework( ['Nastya', 'Taras'], null ) );
+console.log( checkHomework( ['Nastya', 'Taras'], null ) );
 
 // 
 // Scope - області видимости: Global v.s. Local
@@ -169,22 +169,22 @@ var myName = 'Rost';
 function getMyName () {
 	var myName;
 	// 2. Local Variable:
-	Core.Print( myName ); // undefined
+	console.log( myName ); // undefined
 	var myName = 'Mykyta';
-	Core.Print( myName ); // Mykyta
+	console.log( myName ); // Mykyta
 }
 
 getMyName();
 
-Core.Print( myName ); // Rost
+console.log( myName ); // Rost
 
 // 
 // Variables Hoisting: moving declarations to the top;
 // 
 
-Core.Print( pi ); // undefined
+console.log( pi ); // undefined
 var pi = 3.14;
-Core.Print( pi ); // 3.14
+console.log( pi ); // 3.14
 
 //
 // Callbacks - функції зворотнього виклику
@@ -219,7 +219,7 @@ function getToTheShopAndCallBack ( callbackFunction ) {
 function chooseThePhone( cellPhones ) {
 	var result = cellPhones[0];
 
-	Core.Print( 'I need a phone ' + result );
+	console.log( 'I need a phone ' + result );
 	return result;
 }
 
@@ -263,29 +263,29 @@ var student = {
 	surname: 'surname_value'
 };
 
-Core.Print( student.name ); // 'name_value'
+console.log( student.name ); // 'name_value'
 
-Core.Print('\nLesson 3 - Homework');
+console.log('\nLesson 3 - Homework');
 
-Core.Print('\nTask 3.1');
+console.log('\nTask 3.1');
 // Task 3.1. Вище у коді визначено об'єкт student. 
 // Додайте до нього властивість birthday, задавши початкове значення у форматі new Date(1991,8,24);
 // TODO: пишіть свій код тут
 
-Core.Print('\nTask 3.2');
+console.log('\nTask 3.2');
 // Task 3.2. Додайте до об'єкту student метод getDaysToBirtday, який буде повідомляти, 
 // скільки днів залишилося до дня народження студента.
 // TODO: пишіть свій код тут
 
-Core.Print('\nTask 3.3');
+console.log('\nTask 3.3');
 // Task 3.3. необов'язково: викличте нову помилку типу Error з 
 // довільним повідомленням про помилку.
 // TODO: пишіть свій код тут
 
-Core.Print('\nTask 3.4');
+console.log('\nTask 3.4');
 // Task 3.4. Почитати про функції тут:
 // TODO: 
 // 
 // https://habrahabr.ru/post/240349/
 
-Core.Print('\nLesson 3 - Homework End');
+console.log('\nLesson 3 - Homework End');

@@ -13,17 +13,17 @@
  *
  *
  * Щоб завантажити урок у Шелл:
- * Core.Load('../../lessons/10/l-10.js');
+ * node ('../../lessons/10/l-10.js');
  *
  */
 
 'use strict';
 
-Core.Print('\nLesson 10 - Start');
+console.log('\nLesson 10 - Start');
 
 var console = {
 	log: function(arg) {
-		Core.Print('LOG:', arg);
+		console.log('LOG:', arg);
 	}
 };
 
@@ -305,7 +305,7 @@ console.log(fiveMultipliedBySeven);
 // Домашня робота:
 //
 
-Core.Print('\nLesson 10 - Homework');
+console.log('\nLesson 10 - Homework');
 
 // Будемо продовжувати роботу над студентом:
 
@@ -323,7 +323,7 @@ var student = {
 	}
 };
 
-Core.Print('\nTask 10.1');
+console.log('\nTask 10.1');
 // (1 бал)
 // Визначте двома способами (як функціональний вираз та як оголошення функції)
 // функцію cube, що приймає один числовий параметр і повертає куб від цього числа.
@@ -338,7 +338,7 @@ Core.Print('\nTask 10.1');
 
 
 
-Core.Print('\nTask 10.2');
+console.log('\nTask 10.2');
 // (2 бали)
 
 // Спробуйте відповісти, не торкаючись комп'ютера: що виведе у консоль цей код?
@@ -366,7 +366,7 @@ console.log('log from global scope: \n', global1, '\n', global2);
 
 
 
-Core.Print('\nTask 10.3');
+console.log('\nTask 10.3');
 // (2 бали)
 
 // Перепишіть код з попереднього завдання таким чином, щоб _другий_ вивід
@@ -384,7 +384,7 @@ Core.Print('\nTask 10.3');
 
 
 
-Core.Print('\nTask 10.4');
+console.log('\nTask 10.4');
 // (2 бали)
 
 // Перепишіть код з завдання 10.2 таким чином, щоб _другий_ вивід
@@ -400,7 +400,7 @@ Core.Print('\nTask 10.4');
 
 
 
-Core.Print('\nTask 10.5');
+console.log('\nTask 10.5');
 // (3 бали)
 
 // Напишіть функцію insider, що знаходиться всередині функції blackBox і
@@ -418,4 +418,4 @@ Core.Print('\nTask 10.5');
 
 
 
-Core.Print('\nLesson 10 - Homework End');
+console.log('\nLesson 10 - Homework End');

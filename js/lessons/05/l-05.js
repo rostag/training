@@ -5,7 +5,7 @@
  * - Оператори
  *
  * Щоб завантажити урок у Шелл:
- * Core.Load('../../lessons/05/l-05.js');
+ * node ('../../lessons/05/l-05.js');
  */
 
 'use strict';
@@ -161,8 +161,8 @@ modulo = 14 % 4; // 2
 
 var b = 10;
 var a = -b;
-Core.Print(a);
-Core.Print(b);
+console.log(a);
+console.log(b);
 
 //
 // Унарний плюс (+)
@@ -349,7 +349,7 @@ var petroInOffice = petroCarIsInTheGarage || petroIsRegisteredInSecuritySystem; 
 var time = '11:00';
 
 if ( time === '11:00' || time === '23:00' ) {
-	Core.Print('it\'s eleven');
+	console.log('it\'s eleven');
 }
 
 //
@@ -434,9 +434,9 @@ a %= b;	// a = a % b
 // Домашня робота:
 //
 
-Core.Print('\nLesson 05 - Homework');
+console.log('\nLesson 05 - Homework');
 
-Core.Print('\nTask 5.1');
+console.log('\nTask 5.1');
 // (1 бал)
 // TODO: пишіть свій код тут:
 
@@ -456,7 +456,7 @@ Core.Print('\nTask 5.1');
 
 
 
-Core.Print('\nTask 5.2');
+console.log('\nTask 5.2');
 // (2 бали)
 // TODO: пишіть свій код тут:
 
@@ -478,7 +478,7 @@ new Object(), { name: 'petro', title: 'pan' }, ['1', '2', '3'], new Array();
 [1,2,3], {}, '[]', new Array()
 
 
-Core.Print('\nTask 5.3');
+console.log('\nTask 5.3');
 // (1 бал)
 // Перечитайте розділ про оператори даного уроку. Напишіть 4 вирази — по одному для:
 
@@ -492,7 +492,7 @@ Core.Print('\nTask 5.3');
 
 
 
-Core.Print('\nTask 5.4');
+console.log('\nTask 5.4');
 // (2 бали)
 // Завдання виконувати, інтерпретуючи код самотужки, без комп'ютера:
 // Яке значення буде мати змінна b після виконання коду нижче?
@@ -505,7 +505,7 @@ var c = ++a;
 
 
 
-Core.Print('\nTask 5.5');
+console.log('\nTask 5.5');
 // (2 бали)
 // Завдання виконувати, інтерпретуючи код самотужки, без комп'ютера:
 // Яке значення буде мати змінна val1 після виконання коду нижче?
@@ -520,7 +520,7 @@ var val3 = 0 + '1';
 // TODO: пишіть тут:
 var val3 = 0 - '1';
 
-Core.Print('\nTask 5.6');
+console.log('\nTask 5.6');
 // (3 бали)
 // Завдання виконувати, інтерпретуючи код самотужки, без комп'ютера:
 // Які значення будуть давати наведені нижче вирази у результаті обчислення?
@@ -594,7 +594,7 @@ false / false	// TODO:
 '1' / false	// TODO:
 
 
-Core.Print('\nTask 5.7');
+console.log('\nTask 5.7');
 // (3 бали)
 // Напишіть функцію divisableByThreeOrFive, яка використовую оператор ділення по модулю для того, щоб визначити,
 // чи ділиться число націло на 3 або 5, і повертає true, якщо число ділиться і на 3, і на 5.
@@ -602,4 +602,4 @@ Core.Print('\nTask 5.7');
 // TODO: пишіть свій код тут:
 
 
-Core.Print('\nLesson 05 - Homework End');
+console.log('\nLesson 05 - Homework End');

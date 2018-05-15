@@ -6,10 +6,10 @@
  * 	Рекурсія
  *
  * Щоб завантажити урок у Шелл:
- * Core.Load('../../lessons/11/l-11.js');
+ * node ('../../lessons/11/l-11.js');
  */
 
-Core.Print('\nLesson 11 - Start');
+console.log('\nLesson 11 - Start');
 
  /* В програмуванні, замиканням (англ. closure) називається підпрограма,
  що виконується в середовищі, що містить одну або більше зв'язаних змінних.
@@ -246,11 +246,11 @@ function onError ( result, error ) {
 
 loadData( onSuccess, onError );
 
-Core.Print('\nLesson 11 - End');
+console.log('\nLesson 11 - End');
 
-Core.Print('\nLesson 11 - Homework');
+console.log('\nLesson 11 - Homework');
 
-Core.Print('\nTask 11.1');
+console.log('\nTask 11.1');
 // (1 бал)
 // Перечитай уважно файл уроку і дай відповідь:
 // Чи є замиканнями обидві наведені нижче функції? Чому?
@@ -268,7 +268,7 @@ function func1() {
 // TODO: дай відповідь тут:
 // ОБИДВІ. Тому що всі функції є ними.
 
-Core.Print('\nTask 11.2');
+console.log('\nTask 11.2');
 // (1 бал)
 // Напиши функцію-замикання -- будь-яку.
 // TODO: пиши код тут:
@@ -279,7 +279,7 @@ function sillyClosure() {
 
 console.log(sillyClosure())
 
-Core.Print('\nTask 11.3');
+console.log('\nTask 11.3');
 // (1 бал)
 // Є замикання iAmClosure із внутрішньою змінною iAmEnclosed.
 // Як можна отримати доступ до цієї змінної?
@@ -322,7 +322,7 @@ console.log( brokenDisclosedInternal );
 
 
 
-Core.Print('\nTask 11.4');
+console.log('\nTask 11.4');
 // (2 бали)
 // Напиши функцію, до внутрішньої змінної якої можна
 // отримати доступ через внутрішню функцію,
@@ -343,7 +343,7 @@ var accessEnclosed = iAmClosureFour();
 var disclosedInternalFour = accessEnclosed();
 
 
-Core.Print('\nTask 11.5');
+console.log('\nTask 11.5');
 // (1 бал)
 // Напиши приклад анонімної функції
 // TODO: пиши тут:
@@ -355,7 +355,7 @@ function(){ return null })
 (function(){ return null })()
 (function(){ return null }())
 
-Core.Print('\nTask 11.6');
+console.log('\nTask 11.6');
 // (2 бали)
 // Напиши функцію useAnonymousCallback, що приймає у якості параметра анонімну функцію.
 // TODO: пиши тут:
@@ -370,7 +370,7 @@ console.log(useAnonymousCallback(function () {
 
 
 
-Core.Print('\nTask 11.7');
+console.log('\nTask 11.7');
 // (2 бали)
 // Напиши функцію useNamedCallback, що приймає у якості параметра іменовану функцію.
 // TODO: пиши тут:
@@ -387,7 +387,7 @@ function namedCallback() {
 useNamedCallback( namedCallback );
 
 
-Core.Print('\nTask 11.7');
+console.log('\nTask 11.7');
 // (3 бали)
 // Напиши функцію workingCallback, що приймає у якості параметра іменовану функцію
 // і викликає її, передаючи їй у якості параметра свою внутрішню змінну enclosed.
@@ -434,7 +434,7 @@ workingClosure();
 
 
 
-Core.Print('\nTask 11.7');
+console.log('\nTask 11.7');
 // (2 бали)
 // Скільки способів отримання доступу до внутрішніх змінних замикання було
 // використано при виконанні цієї дом. роботи? Назви їх або напиши коротко їх приклади.
@@ -443,4 +443,4 @@ Core.Print('\nTask 11.7');
 
 
 
-Core.Print('\nLesson 11 - Homework End');
+console.log('\nLesson 11 - Homework End');

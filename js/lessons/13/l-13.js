@@ -5,7 +5,7 @@
  * - Special characters
  *
  * Щоб завантажити урок у Шелл:
- * Core.Load('../../lessons/13/l-13.js');
+ * node ('../../lessons/13/l-13.js');
 
   What is RegExp?
 

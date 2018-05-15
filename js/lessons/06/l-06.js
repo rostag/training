@@ -4,12 +4,12 @@
  *  - Оператори (завершення)
  *	- Оптимізація коду: від базової до екстремальної
  *  - Рефакторинг (базове поняття)
- * Щоб завантажити урок у Шелл: Core.Load('../../lessons/06/l-06.js');
+ * Щоб завантажити урок у Шелл: node ('../../lessons/06/l-06.js');
  */
 
 'use strict';
 
-Core.Print('\nLesson 06 - Start');
+console.log('\nLesson 06 - Start');
 
 //
 // Оператори - завершення
@@ -86,7 +86,7 @@ k = myObject['child']['id'];
 // задану першим операндом, використовуючи в якості аргументів операнди,
 // що залишилися. Наприклад:
 
-Core.Print('Welcome ' + 'name');
+console.log('Welcome ' + 'name');
 
 
 //
@@ -191,7 +191,7 @@ i = 'x' in obj; // Дорівнює true
 var d = new Date();
 
 // Дасть true, бо об'єкт d був створений за допомогою функції Date():
-Core.Print('d instanceof Date: ' + (d instanceof Date));
+console.log('d instanceof Date: ' + (d instanceof Date));
 
 
 
@@ -376,15 +376,15 @@ function divisableByThreeOrFive(a) {
 // даючи точно той самий результат, що й до рефакторингу.
 
 
-Core.Print('\nLesson 06 - End');
+console.log('\nLesson 06 - End');
 
 //
 // Домашня робота:
 //
 
-Core.Print('\nLesson 06 - Homework');
+console.log('\nLesson 06 - Homework');
 
-Core.Print('\nTask 6.0');
+console.log('\nTask 6.0');
 // 1 бал
 
 // Оголошено три змінні: x, y, z
@@ -399,7 +399,7 @@ var z = 3;
 
 
 
-Core.Print('\nTask 6.1');
+console.log('\nTask 6.1');
 // 1 бал
 
 // Маємо масив:
@@ -412,7 +412,7 @@ var primes = [1, 3, 5, 7, 11];
 
 
 
-Core.Print('\nTask 6.2');
+console.log('\nTask 6.2');
 // 1 бал
 // Є об'єкт:
 var sky = {
@@ -429,11 +429,11 @@ var sky = {
 
 
 
-Core.Print('\nTask 6.3');
+console.log('\nTask 6.3');
 // 1 бал
 // Є примітивна функція:
 
-function printHello(){ Core.Print('Hello'); }
+function printHello(){ console.log('Hello'); }
 
 // У якому з цих випадків у консоль буде виведено 'Hello'?
 
@@ -451,46 +451,46 @@ printHello.Hello;
 
 
 
-Core.Print('\nTask 6.4');
+console.log('\nTask 6.4');
 // 1 бал
 // Оператори рівності та ідентичности
 // Які результати будуть у консолі для цих випадків:
 
 // 1.
-Core.Print( 1 == 1 );
+console.log( 1 == 1 );
 
 // 2.
-Core.Print( 1 == '1' );
+console.log( 1 == '1' );
 
 // 3.
-Core.Print( 1 === 1 );
+console.log( 1 === 1 );
 
 // 4.
-Core.Print( 1 === '1' );
+console.log( 1 === '1' );
 
 
 
 
 
 
-Core.Print('\nTask 6.5');
+console.log('\nTask 6.5');
 // 1 бал
 // Оператори не-рівності та не-ідентичности
 
 // Які результати будуть у консолі для цих випадків:
 
 // 1.
-Core.Print( 1 != '1' );
+console.log( 1 != '1' );
 
 // 2.
-Core.Print( 1 !== '1' );
+console.log( 1 !== '1' );
 
 
 
 
 
 
-Core.Print('\nTask 6.6');
+console.log('\nTask 6.6');
 // 1 бал
 // За допомогою оператора in перевірте, чи є у визначеному вище об'єкті sky
 // властивість moon:
@@ -500,7 +500,7 @@ Core.Print('\nTask 6.6');
 
 
 
-Core.Print('\nTask 6.7');
+console.log('\nTask 6.7');
 // 1 бал
 // За допомогою оператора instanceof перевірте, чи було об'єкт sky створено
 // через конструктор Object:
@@ -510,7 +510,7 @@ Core.Print('\nTask 6.7');
 
 
 
-Core.Print('\nTask 6.8');
+console.log('\nTask 6.8');
 // 2 бали
 // Напишіть будь-який вираз з тернарним оператором (?:)
 
@@ -519,7 +519,7 @@ Core.Print('\nTask 6.8');
 
 
 
-Core.Print('\nTask 6.9');
+console.log('\nTask 6.9');
 // 2 бали
 // За допомогою оператора typeof визначте тип змінної primes (визначена вище)
 
@@ -528,7 +528,7 @@ Core.Print('\nTask 6.9');
 
 
 
-Core.Print('\nTask 6.10');
+console.log('\nTask 6.10');
 // 2 бали
 // Використайте оператор створення об'єкта, щоб створити нову дату:
 
@@ -536,7 +536,7 @@ Core.Print('\nTask 6.10');
 
 
 
-Core.Print('\nTask 6.11');
+console.log('\nTask 6.11');
 // 2 бали
 // Видаліть із об'єкта sky властивість moon
 
@@ -545,7 +545,7 @@ Core.Print('\nTask 6.11');
 
 
 
-Core.Print('\nTask 6.12');
+console.log('\nTask 6.12');
 // (3 бали)
 // Напишіть функцію, яка друкує (виводить у консоль) числа від 1 до 100.
 // Але замість числа, кратного трьом, друкує не саме число, а рядок "Fizz".
@@ -553,4 +553,4 @@ Core.Print('\nTask 6.12');
 // А замість чисел, кратних і трьом, і п'ятьом, друкує "FizzBuzz".
 // TODO: пишіть свій код тут:
 
-Core.Print('\nLesson 06 - Homework End');
+console.log('\nLesson 06 - Homework End');

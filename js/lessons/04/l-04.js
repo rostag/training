@@ -7,13 +7,13 @@
  * - Ланцюги видимости (scope chains)
  * 
  * Щоб завантажити урок у Шелл:
- * Core.Load('../../lessons/04/l-04.js');
+ * node ('../../lessons/04/l-04.js');
  */
 
 // Звикаємо завжди переходити у строгий режим:
 'use strict';
 
-Core.Print('\nLesson 4 - Start');
+console.log('\nLesson 4 - Start');
 
 // 
 // Пригадаємо функції
@@ -32,7 +32,7 @@ Core.Print('\nLesson 4 - Start');
 // (тоді вони називаються callbacks - функції зворотнього виклику).
 
 function hello() {
-	Core.Print('Hello');
+	console.log('Hello');
 }
 
 hello();
@@ -125,11 +125,11 @@ if ( console === undefined ) {
 	var console = {
 		log: function( str ){
 			if( Core !== undefined ) {
-				Core.Print( str );
+				console.log( str );
 			}
 		},
 		h1: function( str ) {
-			Core.Print( '\n# ' + str + ' #\n');
+			console.log( '\n# ' + str + ' #\n');
 		}
 	};
 }
@@ -253,7 +253,7 @@ var aGlobal = 'aGlobal from Global';
 
 function hasLocalVarWithSameName() {
 	var aGlobal = 'aGlobal from function hasLocalVarWithSameName';
-	Core.Print(aGlobal);
+	console.log(aGlobal);
 }
 
 hasLocalVarWithSameName();
@@ -312,29 +312,29 @@ onion();
 // Домашня робота:
 //
 
-Core.Print('\nLesson 04 - Homework');
+console.log('\nLesson 04 - Homework');
 
 // Частина 1 - виконати у понеділок:
 
-Core.Print('\nTask 4.1'); 
+console.log('\nTask 4.1'); 
 // (1 бал)
 // Оголосіть змінні таких типів (але не ініціюйте їх):
 // String, Number, Boolean, Object, Array
 // TODO: пишіть свій код тут:
 
-Core.Print('\nTask 4.2'); 
+console.log('\nTask 4.2'); 
 // (1 бал)
 // Ініціюйте оголошені вище змінні (надайте їм початкових значень).
 // TODO: пишіть свій код тут:
 
-Core.Print('\nTask 4.3'); 
+console.log('\nTask 4.3'); 
 // (1 бал)
 // Напишіть приклад, де змінна і оголошується, і ініціюється (одним рядком).
 // TODO: пишіть свій код тут:
 
 // Частина 2 - виконати у вівіторок:
 
-Core.Print('\nTask 4.4'); 
+console.log('\nTask 4.4'); 
 // (2 бали)
 // Дайте відповідь, чи правдиві наступні твердження, надаючи значеннь
 // true чи false відповідним змінним:
@@ -351,7 +351,7 @@ var charExistsInJs;
 // TODO: надайте значення false чи true цій змінній:
 var numberExistsInJs;
 
-Core.Print('\nTask 4.5'); 
+console.log('\nTask 4.5'); 
 // (1 бал) 
 
 // Продовжимо роботу над студентом:
@@ -374,7 +374,7 @@ var student = {
 
 // Частина 3 - Середа:
 
-Core.Print('\nTask 4.6');
+console.log('\nTask 4.6');
 // (2 бали) 
 // Додайте до student-а метод getHomeworkFileById, який приймає три параметри: 
 // fileName, fileExtension та lessonId
@@ -383,7 +383,7 @@ Core.Print('\nTask 4.6');
 
 // TODO: пишіть свій код тут:
 
-Core.Print('\nTask 4.7'); 
+console.log('\nTask 4.7'); 
 // (3 бали)
 // Спробуйте самотужки створити ієрархію з двох вкладених функцій doTheJob та thinkBeforeDoing таким чином, 
 // щоб обидві функції мали по власній змінній result, значення якої буде різним 
@@ -393,7 +393,7 @@ Core.Print('\nTask 4.7');
 
 // Частина 4 - субота і неділя:
 
-Core.Print('\nTask 4.8');
+console.log('\nTask 4.8');
 // Почитати на вихідних:
 
 // Субота:
@@ -402,4 +402,4 @@ Core.Print('\nTask 4.8');
 // Неділя:
 // https://learn.javascript.ru/function-basics
 
-Core.Print('\nLesson 04 - Homework End');
+console.log('\nLesson 04 - Homework End');

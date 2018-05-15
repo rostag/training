@@ -3,7 +3,7 @@
 	Deeper into data types.
 
 	To load this lesson into Shell:
- 	Core.Load('../../lessons/02/l-02.js');
+ 	node ('../../lessons/02/l-02.js');
 */
 
 //
@@ -301,21 +301,21 @@ var lesson = {
 // Домашня робота:
 //
 
-Core.Print('\nLesson 02 - Homework');
+console.log('\nLesson 02 - Homework');
 
-Core.Print('\nTask 2.1');
+console.log('\nTask 2.1');
 // Task 2.1. За допомогою функції String.substring взяти символи від 5 по 8 з рядка helloWorld і вивести результат у консоль.
 // 1 бал
 // TODO: пишіть свій код тут
 
-Core.Print('\nTask 2.2');
+console.log('\nTask 2.2');
 // Task 2.1. Додати до об'єкту lesson властивість date і надати їй значення null:
 // 2 бали
 // TODO: пишіть свій код тут
 
-Core.Print('\nTask 2.3');
+console.log('\nTask 2.3');
 // Task 2.2. Додати до об'єкту lesson метод getInfo, 
 // який одним рядком виводить у консоль інформацію про урок: назву, id та дату
 // TODO: пишіть свій код тут
 
-Core.Print('\nLesson 02 - Homework End');
+console.log('\nLesson 02 - Homework End');
