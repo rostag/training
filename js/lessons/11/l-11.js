@@ -262,7 +262,7 @@ function func1() {
 	var var1;
 	return func1InternalFunc() {
 
-	}
+	};
 }
 
 // TODO: дай відповідь тут:
@@ -349,7 +349,7 @@ console.log('\nTask 11.5');
 // TODO: пиши тут:
 
 // RIGHT:
-function(){ return null })
+(function doNull(){ return null })
 
 // RIGHT ALSO + THIS IS IIFE because of () in the end
 (function(){ return null })()
