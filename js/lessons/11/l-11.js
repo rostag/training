@@ -262,7 +262,7 @@ function func1() {
 	var var1;
 	return func1InternalFunc() {
 
-	};
+	}
 }
 
 // TODO: дай відповідь тут:
