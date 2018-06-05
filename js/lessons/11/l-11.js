@@ -248,11 +248,18 @@ loadData( onSuccess, onError );
 
 console.log('\nLesson 11 - End');
 
+
+
+
+
+
+
+
+
 console.log('\nLesson 11 - Homework');
 
 console.log('\nTask 11.1');
 // (1 бал)
-// Перечитай уважно файл уроку і дай відповідь:
 // Чи є замиканнями обидві наведені нижче функції? Чому?
 function func1() {
 	var var1;
@@ -354,6 +361,8 @@ console.log('\nTask 11.5');
 // RIGHT ALSO + THIS IS IIFE because of () in the end
 (function(){ return null })()
 (function(){ return null }())
+
+
 
 console.log('\nTask 11.6');
 // (2 бали)
