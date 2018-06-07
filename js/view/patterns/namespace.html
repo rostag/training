@@ -3,27 +3,27 @@
 <p>Замість того щоб засмічувати глобальний простір імен великою кількістю функцій, об'єктів та інших змінних, можна створити один (в ідеалі тільки один) глобальний об'єкт, який буде служити простором імен для програми або бібліотеки.</p>
 <p>Простий приклад використання:</p>
 <p>
-	<code>var App = {};</code>
+	<code>var JSQA_APP = {};</code>
 	<br />
-	<code>App.someMethod = function(){/*...*/};</code>
+	<code>JSQA_APP.someMethod = function(){/*...*/};</code>
 	<br />
-	<code>App.var_a = 1;</code>
+	<code>JSQA_APP.var_a = 1;</code>
 	<br />
-	<code>App.modules = {};</code>
+	<code>JSQA_APP.modules = {};</code>
 	<br />
-	<code>App.modules.someChildModule = {};</code>
+	<code>JSQA_APP.modules.someChildModule = {};</code>
 </p>
 <p>Універсальна функція для створення простору імен</p>
 <p>
-	<code>var App = App || {};</code>
+	<code>var JSQA_APP = JSQA_APP || {};</code>
 	<br />
-	<code>App.namespace = function (ns_string) {</code>
+	<code>JSQA_APP.namespace = function (ns_string) {</code>
 	<br />
 	<code>&nbsp;&nbsp;var parts = ns_string.split('.'),</code>
 	<br />
-	<code>&nbsp;&nbsp;&nbsp;&nbsp;parent = MYAPP, i;</code>
+	<code>&nbsp;&nbsp;&nbsp;&nbsp;parent = JSQA_APP, i;</code>
 	<br />
-	<code>&nbsp;&nbsp;if (parts[0] === “MYAPP”) parts = parts.slice(1);</code>
+	<code>&nbsp;&nbsp;if (parts[0] === “JSQA_APP”) parts = parts.slice(1);</code>
 	<br />
 	<code>&nbsp;&nbsp;for (i = 0; i < parts.length; i++){</code>
 	<br />
@@ -41,7 +41,7 @@
 <p>
 	<code>// привласнювати значення, що повертається локальній змінній</code>
 	<br />
-	<code>var module2 = App.namespace('App.modules.module2');</code>
+	<code>var module2 = JSQA_APP.namespace('JSQA_APP.modules.module2');</code>
 	<br />
-	<code>App.namespace('modules.module51');</code>
+	<code>JSQA_APP.namespace('modules.module51');</code>
 </p>
